@@ -1,15 +1,23 @@
-# Architecture
+# Architecture — DSRT App
 
-dsrt-app is built with:
-- **Next.js App Router** for pages and APIs
-- **TypeScript** for type safety
-- **Tailwind CSS** for styling
-- **Serverless functions** for API routes
+## Overview
+DSRT is a **Next.js 14 (App Router)** project focused on **digital editing tools**:
+- Photo editing
+- Video editing
+- Logo design
+- Automatic background removal (AI)
 
-app/ ├── layout.tsx ├── page.tsx └── api/
+## Frontend
+- **Framework**: Next.js
+- **Styling**: Tailwind CSS
+- **Components**: Modular (Header, Hero, Features, Footer, RainBackground)
+- **Accessibility**: Semantic HTML + aria-labels
 
-## Layers
-- `src/components/` → UI components
-- `src/hooks/` → Custom React hooks
-- `src/lib/` → Utilities and helpers
-- `src/types/` → TypeScript type definitions
+## Backend
+- **Next.js API Routes** (`app/api/`)
+- Planned AI endpoints (remove-bg, video processing)
+- Future DB integration for user uploads & projects
+
+## File Structure (highlight)
+
+dsrt-app/ ├── app/               # Next.js App Router │   ├── page.tsx       # Landing page (Foto, Video, Logo, Remove BG) │   └── api/           # Planned API routes ├── src/components/    # UI (Hero, Features, Rain, Footer) ├── docs/              # Documentation ├── legal/             # Terms, Privacy, Disclaimer └── .github/           # CI/CD workflows
