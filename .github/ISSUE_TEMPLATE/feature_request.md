@@ -1,23 +1,18 @@
+name: "✨ Feature Request"
+about: Suggest a new feature or improvement
+title: "[FEATURE] "
+labels: [ "✨ enhancement" ]
+assignees: ''
 ---
-name: ✨ Feature Request
-about: Suggest an idea or enhancement for dsrt-app
-title: "[FEATURE] <short description>"
-labels: enhancement
-assignees: mydsrt-artweb
----
 
-## ✨ Feature Description
-A clear and concise description of the feature you’d like to see.
+## 🎯 Problem Statement
+Is your feature request related to a problem?
 
-## 🤔 Problem Statement
-Why do you need this feature?  
-Is it related to a problem you’re facing?
+## 💡 Proposed Solution
+A clear and concise description of what you want to happen.
 
-## 📝 Proposed Solution
-Describe how you think this should be implemented.
-
-## 🎯 Alternatives Considered
+## 🔄 Alternatives
 Any alternative solutions or features you’ve considered.
 
-## 📌 Additional Context
-Add any other context, references, or screenshots here.
+## 📸 Mockups / Examples
+Add sketches, screenshots, or Figma links if available.
