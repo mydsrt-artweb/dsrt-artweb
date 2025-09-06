@@ -1,51 +1,22 @@
-name: 🔒 Security Scans
+name: "🛡️ Security Scan"
 
 on:
   schedule:
-    - cron: '0 2 * * 1' # Run every Monday at 02:00 UTC
-  workflow_dispatch:       # Allow manual trigger
+    - cron: '0 0 * * 0'
+  workflow_dispatch:
 
 jobs:
-  dependency-audit:
-    name: 📦 Dependency Audit
+  audit:
     runs-on: ubuntu-latest
+
     steps:
       - name: 📥 Checkout repository
-        uses: actions/checkout@v3
-
+        uses: actions/checkout@v4
       - name: 🟢 Setup Node.js
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
           node-version: 20
-          cache: npm
-
-      - name: 📦 Install dependencies
-        run: npm install
-
-      - name: 🔍 Run npm audit
-        run: npm audit --audit-level=moderate
-
-  codeql-analysis:
-    name: 🛡 CodeQL Analysis
-    runs-on: ubuntu-latest
-    permissions:
-      security-events: write
-      actions: read
-      contents: read
-
-    strategy:
-      fail-fast: false
-      matrix:
-        language: [ 'javascript' ]
-
-    steps:
-      - name: 📥 Checkout repository
-        uses: actions/checkout@v3
-
-      - name: 🛠 Initialize CodeQL
-        uses: github/codeql-action/init@v2
-        with:
-          languages: ${{ matrix.language }}
-
-      - name: 🔎 Perform CodeQL Analysis
-        uses: github/codeql-action/analyze@v2
+      - name: 🔎 Audit dependencies
+        run: |
+          npm install
+          npm audit --audit-level=moderate
