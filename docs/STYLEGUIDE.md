@@ -1,6 +1,4 @@
-## 📄 `docs/STYLEGUIDE.md`
-```md
-# Style Guide — DSRT App
+## Style Guide — DSRT App
 
 ## Languages
 - **Code**: TypeScript
