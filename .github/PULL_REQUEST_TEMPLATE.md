@@ -1,20 +1,15 @@
-# 🚀 Pull Request
+# 📥 Pull Request
 
-## 📌 Description
-Please include a summary of the changes.
+## Description
+Please provide a clear and concise description of the change.
 
-## 🔗 Related Issue
-Closes # (issue)
+## Type of Change
+- [ ] 🐛 Bug fix
+- [ ] ✨ New feature
+- [ ] ♻️ Refactor
+- [ ] 📝 Documentation
 
----
-
-## ✅ Checklist
-- [ ] Code follows project style guidelines
-- [ ] Lint & tests pass locally (`npm run lint && npm test`)
-- [ ] Documentation updated if needed
-- [ ] Screenshots included (for UI changes)
-
----
-
-## 📸 Screenshots (UI Changes)
-(Insert images or GIFs if applicable)
+## Checklist
+- [ ] Tests added or updated
+- [ ] Documentation updated
+- [ ] Linting checks passed
