@@ -2,27 +2,22 @@
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
+
   experimental: {
-    appDir: true
+    appDir: true, // App Router enabled
   },
-  eslint: {
-    // jangan block build kalau ada error lint
-    ignoreDuringBuilds: true
-  },
+
   images: {
-    domains: [
-      "lh3.googleusercontent.com", // Google OAuth profile images
-      "avatars.githubusercontent.com", // GitHub profile images
-      "cdn.discordapp.com", // Discord avatars
-      "res.cloudinary.com", // Cloudinary assets
-      "supabase.co", // Supabase storage
-      "replicate.delivery" // Replicate output
-    ]
+    domains: ["lh3.googleusercontent.com", "avatars.githubusercontent.com", "cdn.jsdelivr.net"],
   },
+
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
+
   typescript: {
-    // jangan block build kalau ada error ts
-    ignoreBuildErrors: true
-  }
+    ignoreBuildErrors: false,
+  },
 };
 
 module.exports = nextConfig;
