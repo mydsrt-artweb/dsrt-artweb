@@ -1,91 +1,182 @@
-# 🍨 dsrt-app
+# 🎨 DSRT — Digital Smart Revise Technology
 
-[![CI](https://github.com/mydsrt-artweb/dsrt-app/actions/workflows/ci.yml/badge.svg)](https://github.com/mydsrt-artweb/dsrt-app/actions/workflows/ci.yml)
-[![Security Scans](https://github.com/mydsrt-artweb/dsrt-app/actions/workflows/security.yml/badge.svg)](https://github.com/mydsrt-artweb/dsrt-app/actions/workflows/security.yml)
-[![Deploy](https://github.com/mydsrt-artweb/dsrt-app/actions/workflows/vercel.yml/badge.svg)](https://github.com/mydsrt-artweb/dsrt-app/deployments)
-[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
-
-> Modern web application for digital editing & creative tools.
+[![CI](https://github.com/your-org/dsrt-app/actions/workflows/ci.yml/badge.svg)](./.github/workflows/ci.yml)
+[![Deploy](https://github.com/your-org/dsrt-app/actions/workflows/deploy.yml/badge.svg)](./.github/workflows/deploy.yml)
+[![Security](https://github.com/your-org/dsrt-app/actions/workflows/security.yml/badge.svg)](./.github/SECURITY.md)
+[![License](https://img.shields.io/github/license/your-org/dsrt-app)](./legal/LICENSE.md)
+[![Sponsors](https://img.shields.io/badge/sponsor-❤-ff69b4)](./.github/FUNDING.yml)
 
 ---
 
-## 📖 Overview
+## 📌 Overview
+**DSRT (Digital Smart Revise Technology)** is an **AI-powered creative editing platform**.  
+It enables individuals and businesses to **edit, transform, and optimize media** — including **photos, videos, logos, and backgrounds** — directly in the browser.
 
-**dsrt-app** is a modern web application built with **Next.js**, **TypeScript**, and **Tailwind CSS**.  
-It is designed for scalability, maintainability, and professional open-source collaboration.
-
-🔗 **Live Demo** → [dsrt-app.vercel.app](https://dsrt-app.vercel.app) *(if deployed to Vercel)*
-
-📷 **Instagram** → [@dessert.adm](https://www.instagram.com/dessert.adm)  
-📧 **Contact** → [artwebdsrt@gmail.com](mailto:artwebdsrt@gmail.com)
+🚀 Built with **Next.js 13+, Supabase, Replicate API, Tailwind, and Vercel**.
 
 ---
 
 ## ✨ Features
-
-- 🎨 **Photo Editing** → optimize and enhance images.  
-- 🎬 **Video Tools** → fast rendering and editing.  
-- 🖌 **Logo Generator** → design & export vector logos.  
-- ✂️ **Background Removal** → AI-powered background eraser.  
-- 📱 **Responsive UI** → mobile-first, optimized with Tailwind.  
-
----
-
-## 🛠 Tech Stack
-
-- [Next.js](https://nextjs.org/) – App Router  
-- [TypeScript](https://www.typescriptlang.org/) – Strong typing  
-- [Tailwind CSS](https://tailwindcss.com/) – Utility-first styling  
-- [ESLint](https://eslint.org/) & [Prettier](https://prettier.io/) – Code quality  
-- [GitHub Actions](https://docs.github.com/en/actions) – CI/CD  
+- 🖼️ **Photo Editor** — crop, resize, filters, AI enhancement  
+- 🎬 **Video Editor** — lightweight trim, merge, transitions  
+- 🎨 **Logo Creator** — generate and export professional logos  
+- ✂️ **Background Removal** — one-click AI-powered remove-bg  
+- 🔗 **Realtime Collaboration** — edit together in the same session  
+- 💎 **Premium Plan** — HD exports, batch editing, pro filters  
 
 ---
 
-## 🚀 Getting Started
+## 🏛 Architecture
+- **Frontend** → Next.js + Tailwind  
+- **Backend** → Next.js API routes + Supabase (Postgres, Auth, Storage)  
+- **AI Services** → Replicate API (image/video processing)  
+- **Hosting** → Vercel (CI/CD integrated)  
 
-### 🔧 Installation
+📖 See [Architecture Guide](./docs/architecture.md)  
 
+---
+
+## 📖 Documentation
+- [Installation Guide](./docs/install.md)  
+- [Deployment Guide](./docs/deployment.md)  
+- [API Reference](./docs/api.md)  
+- [Style Guide](./docs/styleguide.md)  
+- [Product Overview](./docs/product.md)  
+- [Roadmap](./docs/roadmap.md)  
+- [Changelog](./docs/changelog.md)  
+- [FAQ](./docs/faq.md)  
+- [Troubleshooting](./docs/troubleshooting.md)  
+
+---
+
+## 🚀 Quick Start
+### 1. Clone & Install
 ```bash
-# Clone repo
-git clone https://github.com/mydsrt-artweb/dsrt-app.git
+git clone https://github.com/your-org/dsrt-app.git
 cd dsrt-app
-
-# Install dependencies
 npm install
 
-# Run dev server
+2. Environment Setup
+
+Copy .env.example → .env.local and configure:
+
+NEXT_PUBLIC_SUPABASE_URL=...
+NEXT_PUBLIC_SUPABASE_ANON_KEY=...
+REPLICATE_API_TOKEN=...
+
+3. Run Development Server
+
 npm run dev
 
-👉 Visit http://localhost:3000
+Visit 👉 http://localhost:3000
 
-📦 Build for Production
 
-npm run build
-npm run start
+---
 
-🌐 Export Static (for GitHub Pages)
+🧪 Testing
 
-npm run export
+Unit & integration tests → npm run test
+
+Coverage report → npm run test -- --coverage
+
+E2E tests (Playwright/Cypress) → npm run test:e2e
+
+
+📖 See Testing Guide
+
+
+---
+
+💎 Premium Features
+
+Upgrade to DSRT Premium to unlock:
+
+HD exports
+
+AI-powered auto-enhancement
+
+Batch editing
+
+Enterprise team support
+
+
+📖 Details in Product Guide
 
 
 ---
 
 🤝 Contributing
 
-Contributions are welcome!
-Please read our CONTRIBUTING.md and CODE_OF_CONDUCT.md.
+We welcome contributions! 🎉
+
+Start with the Contributing Guide
+
+Follow the Code of Conduct
+
+Maintainers → see Maintainers List
+
 
 
 ---
 
-🔒 Security
+🛡️ Security
 
-If you discover any security vulnerabilities, please check our SECURITY.md.
+Found a vulnerability? Please follow our Security Policy.
+
+General security overview → Security Docs.
+
+
+
+---
+
+⚖️ Legal
+
+Terms of Service
+
+Privacy Policy
+
+Disclaimer
+
+License
+
+
+
+---
+
+💰 Sponsors
+
+Support DSRT development:
+
+GitHub Sponsors
+
+Patreon
+
+OpenCollective
+
+
+
+---
+
+📣 Community
+
+Discussions → Q&A, ideas, proposals
+
+Issues → bug reports & feature requests
+
+Roadmap → upcoming milestones
+
+
+
+---
+
+🏆 Credits
+
+Maintained by the DSRT Core Team.
+See Governance for details.
 
 
 ---
 
 📜 License
 
-This project is licensed under the MIT License.
-© 2025 DSRT — All rights reserved.
+Distributed under the MIT License.
