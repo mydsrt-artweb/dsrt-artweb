@@ -1,20 +1,26 @@
-# API Documentation — DSRT App
+# DSRT App — API Documentation
 
-Base URL:
+---
+
+## Base URL
 
 /api
+
+---
 
 ## Endpoints
 
 ### 1. Health Check
-
-GET /api/health
+`GET /api/health`
 
 Response:
 ```json
 { "status": "ok", "uptime": 12345 }
 
-2. Background Removal (planned)
+
+---
+
+2. Background Removal (Planned)
 
 POST /api/remove-bg
 
@@ -26,50 +32,77 @@ Response:
 
 { "success": true, "resultUrl": "https://cdn.dsrt.io/output/photo-nobg.png" }
 
-3. Photo Optimization (planned)
+
+---
+
+3. Photo Optimization (Planned)
 
 POST /api/photo/optimize
 
-4. Video Editing (planned)
+Request:
 
-POST /api/video/edit
+{ "imageUrl": "https://example.com/photo.jpg" }
 
-5. Logo Export (planned)
+Response:
+
+{ "success": true, "optimizedUrl": "https://cdn.dsrt.io/output/photo-optimized.jpg" }
+
+
+---
+
+4. Video Editing (Planned)
+
+POST /api/video/process
+
+Request:
+
+{
+  "videoUrl": "https://example.com/video.mp4",
+  "operation": "stabilize"
+}
+
+Response:
+
+{ "success": true, "jobId": "abc123" }
+
+
+---
+
+5. Logo Export (Planned)
 
 POST /api/logo/export
+
+Request:
+
+{
+  "logoId": "xyz789",
+  "format": "svg"
+}
+
+Response:
+
+{ "success": true, "downloadUrl": "https://cdn.dsrt.io/logo.svg" }
 
 ---
 
 ## 📄 `docs/STYLEGUIDE.md`
 ```md
-# Style Guide — DSRT App
+# DSRT App — Style Guide
 
-## Languages
-- **Code**: TypeScript
-- **Docs**: English (Bahasa Indonesia optional)
+---
 
-## Formatting
-- Prettier (2 spaces indentation)
-- ESLint for linting
+## Code Standards
+- **Language**: TypeScript
+- **Framework**: Next.js 14
+- **Styling**: Tailwind CSS
+- **Formatting**: Prettier (2 spaces)
+- **Linting**: ESLint
+
+---
 
 ## Naming Conventions
-- Components → `PascalCase`
-- Hooks → `useCamelCase`
-- Functions & vars → `camelCase`
+- Components → `PascalCase` (`HeroSection.tsx`)
+- Hooks → `useCamelCase` (`useBackgroundRemover.ts`)
+- Variables → `camelCase`
 - Constants → `UPPER_SNAKE_CASE`
-- Files → `kebab-case`
-
-## Git Commit
-Follow **Conventional Commits**:
-- `feat:` new feature (e.g., `feat: add remove-bg API`)
-- `fix:` bug fix
-- `docs:` documentation update
-- `style:` formatting/style only
-- `refactor:` code change without new features
-- `test:` add or update tests
-- `chore:` tooling/config updates
-
-## Pull Requests
-- Keep small and focused
-- Update docs/tests when needed
-- Reference issues (e.g., `Closes #7`)
+- Files → `kebab-case
