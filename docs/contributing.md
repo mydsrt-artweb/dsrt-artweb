@@ -1,30 +1,20 @@
+## 📂 `docs/contributing.md`
+```markdown
 # 🤝 Contributing Guide
 
-Thank you for considering contributing to **DSRT**!
-
-## 🛠️ Development Setup
 1. Fork the repo
-2. Clone locally
-3. Install dependencies
+2. Create a new branch
    ```bash
-   npm install
-   npm run dev
+   git checkout -b feature/my-feature
 
-🧪 Testing
-
-npm run test
-
-📋 Pull Requests
-
-Use a clear branch name (feature/..., fix/...)
-
-Ensure CI (✅ Lint + Tests + Build) passes
-
-Fill the PR Template
+3. Make changes & add tests
 
 
-💡 Issues
+4. Commit with Conventional Commits
 
-Use 🐞 Bug Report
 
-Use ✨ Feature Request
+5. Open a Pull Request
+
+
+
+See Code of Conduct.
