@@ -1,3 +1,5 @@
+## 📄 `STYLEGUIDE.md`
+```md
 # Style Guide — DSRT App
 
 ## Languages
