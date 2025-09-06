@@ -1,25 +1,17 @@
-# 🏛️ Architecture Overview
+# 🏗️ Architecture
 
-The **DSRT Platform (Digital Smart Revise Technology)** is built using modern web technologies:
+DSRT is built with:
+- **Next.js 13 (App Router)** for frontend
+- **Supabase** for auth, database, and storage
+- **Replicate API** for AI models (image/video editing)
+- **Stripe** for premium features
+- **Vercel** for hosting & CI/CD
+- **Zustand + Context** for state management
+- **Jest + Playwright** for testing
 
-## 🔧 Core Stack
-- **Next.js 13+ (App Router)** → Frontend + Server-side Rendering
-- **Supabase** → Authentication, Database, Realtime
-- **Replicate API** → AI-powered image/video processing
-- **TailwindCSS** → Styling system
-- **Vercel** → Hosting & CI/CD
-
-## 🗂️ Project Structure
-- `src/app/` → App Router pages & API routes
-- `src/components/` → Reusable UI components
-- `src/lib/` → API clients, utilities
-- `src/context/` → React contexts (Auth, Editor, Socket)
-- `src/types/` → Shared TypeScript types
-
-## 🔌 Integrations
-- **Auth** → Supabase Auth
-- **Realtime Collaboration** → WebSocket via Supabase/Socket.io
-- **Media Editing** → AI features (crop, resize, filter, remove background)
-
----
-📖 See also: [API Reference](./api.md)
+### Flow
+1. User logs in via Supabase Auth
+2. Editor loads (photo, video, logo)
+3. Features executed either client-side (crop, resize) or via API (Replicate, Supabase functions)
+4. Saved back to Supabase storage
+5. Optional premium via Stripe checkout
