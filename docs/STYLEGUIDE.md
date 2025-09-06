@@ -1,4 +1,4 @@
-## Style Guide — DSRT App
+# Style Guide — DSRT App
 
 ## Languages
 - **Code**: TypeScript
