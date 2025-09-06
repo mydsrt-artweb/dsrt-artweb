@@ -64,3 +64,44 @@ GitHub Pages
 npm run export
 
 Generated static files are located in /out/.
+
+---
+
+## 📄 `docs/ROADMAP.md`
+```md
+# DSRT App — Roadmap
+
+This document outlines completed milestones and upcoming goals.
+
+---
+
+## ✅ Completed
+- Landing page with rain animation
+- Core features highlighted: Photo, Video, Logo, Remove BG
+- CTA link to Dashboard
+- Documentation (docs/, legal/, security)
+
+---
+
+## 🚧 In Progress
+- Dashboard UI with project management
+- Basic API routes for image optimization
+- Integration of AI-powered background remover
+
+---
+
+## 🎯 Planned (Q4 2025)
+- Video editing pipeline (trim, merge, stabilize)
+- Logo design & vector export tools
+- Real-time background removal with queue system
+- Mobile-first PWA
+- Subscription model (Freemium + Premium tiers)
+
+---
+
+## 🌍 Long-Term Vision
+DSRT will evolve into an **AI-driven digital transformation platform**, empowering users to:
+- Seamlessly edit visual content
+- Automate background removal
+- Generate professional logos
+- Manage projects from web and mobile
