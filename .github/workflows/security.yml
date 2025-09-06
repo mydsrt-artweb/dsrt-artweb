@@ -6,28 +6,18 @@ on:
   pull_request:
     branches: [ "main" ]
   schedule:
-    - cron: '0 0 * * 0' # weekly scan
+    - cron: "0 0 * * 0"
 
 jobs:
-  analyze:
-    name: Analyze Code with CodeQL
+  codeql:
     runs-on: ubuntu-latest
     permissions:
-      security-events: write
       actions: read
       contents: read
-
+      security-events: write
     steps:
-      - name: Checkout Repository
-        uses: actions/checkout@v3
-
-      - name: Initialize CodeQL
-        uses: github/codeql-action/init@v2
+      - uses: actions/checkout@v4
+      - uses: github/codeql-action/init@v3
         with:
           languages: javascript
-
-      - name: Autobuild
-        uses: github/codeql-action/autobuild@v2
-
-      - name: Perform CodeQL Analysis
-        uses: github/codeql-action/analyze@v2
+      - uses: github/codeql-action/analyze@v3
