@@ -1,8 +1,18 @@
 blank_issues_enabled: false
+
 contact_links:
-  - name: 📧 Email Support
-    url: mailto:artwebdsrt@gmail.com
-    about: Reach out directly via email for private or sensitive issues.
-  - name: 🌐 Instagram DM
-    url: https://www.instagram.com/dessert.adm
-    about: Contact us via Instagram for quick questions or collaborations.
+  - name: 📖 Documentation
+    url: https://your-domain.com/docs
+    about: Check the official documentation before creating an issue.
+
+  - name: 💬 Discussions
+    url: https://github.com/your-org/dsrt-app/discussions
+    about: Ask questions, share ideas, and discuss improvements.
+
+  - name: 🛟 Support
+    url: https://your-domain.com/support
+    about: Need help? Reach out to the support team here.
+
+  - name: 🔒 Security
+    url: https://github.com/your-org/dsrt-app/security/policy
+    about: Found a vulnerability? Please report it responsibly.
