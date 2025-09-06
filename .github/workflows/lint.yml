@@ -1,0 +1,49 @@
+name: Lint & Format
+
+on:
+  pull_request:
+    branches: [ "main" ]
+  push:
+    branches: [ "main" ]
+  workflow_dispatch:   # bisa dijalankan manual
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 20
+          cache: "npm"
+          cache-dependency-path: |
+            package-lock.json
+
+      - name: Install Dependencies
+        run: npm install --no-fund --no-audit
+
+      - name: Run ESLint
+        run: npm run lint
+
+  prettier:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 20
+          cache: "npm"
+          cache-dependency-path: |
+            package-lock.json
+
+      - name: Install Dependencies
+        run: npm install --no-fund --no-audit
+
+      - name: Run Prettier Check
+        run: npx prettier --check .
