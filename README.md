@@ -1,77 +1,86 @@
 # 🍨 dsrt-app
 
-[![CI Pipeline](https://github.com/mydsrt-artweb/dsrt-app/actions/workflows/ci.yml/badge.svg)](https://github.com/mydsrt-artweb/dsrt-app/actions/workflows/ci.yml)
+[![CI](https://github.com/mydsrt-artweb/dsrt-app/actions/workflows/ci.yml/badge.svg)](https://github.com/mydsrt-artweb/dsrt-app/actions/workflows/ci.yml)
 [![Security Scans](https://github.com/mydsrt-artweb/dsrt-app/actions/workflows/security.yml/badge.svg)](https://github.com/mydsrt-artweb/dsrt-app/actions/workflows/security.yml)
+[![Deploy](https://github.com/mydsrt-artweb/dsrt-app/actions/workflows/vercel.yml/badge.svg)](https://github.com/mydsrt-artweb/dsrt-app/deployments)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
-[![Node.js](https://img.shields.io/badge/Node.js-18%20%7C%2020-brightgreen)](https://nodejs.org/)
-[![Next.js](https://img.shields.io/badge/Next.js-13-black?logo=next.js)](https://nextjs.org/)
-[![TypeScript](https://img.shields.io/badge/TypeScript-5-blue?logo=typescript)](https://www.typescriptlang.org/)
-[![Follow on Instagram](https://img.shields.io/badge/Instagram-dessert.adm-ff69b4?logo=instagram)](https://www.instagram.com/dessert.adm)
+
+> Modern web application for digital editing & creative tools.
 
 ---
 
 ## 📖 Overview
-**dsrt-app** is a modern web application built with [Next.js](https://nextjs.org/), [TypeScript](https://www.typescriptlang.org/), and [Tailwind CSS](https://tailwindcss.com/).  
+
+**dsrt-app** is a modern web application built with **Next.js**, **TypeScript**, and **Tailwind CSS**.  
 It is designed for scalability, maintainability, and professional open-source collaboration.
 
-- 🌐 **GitHub Repo**: [mydsrt-artweb/dsrt-app](https://github.com/mydsrt-artweb/dsrt-app)  
-- 📷 **Instagram**: [@dessert.adm](https://www.instagram.com/dessert.adm)  
-- 📧 **Contact**: [artwebdsrt@gmail.com](mailto:artwebdsrt@gmail.com)  
+🔗 **Live Demo** → [dsrt-app.vercel.app](https://dsrt-app.vercel.app) *(if deployed to Vercel)*
+
+📷 **Instagram** → [@dessert.adm](https://www.instagram.com/dessert.adm)  
+📧 **Contact** → [artwebdsrt@gmail.com](mailto:artwebdsrt@gmail.com)
 
 ---
 
-## 🚀 Features
-- ⚡ Next.js 13 (App Router)
-- 🎨 Tailwind CSS for modern UI
-- 🔒 Security-first setup with GitHub Actions
-- 🧪 Built-in testing setup
-- 📚 Full documentation (installation, roadmap, API, style guide)
-- 🤝 Contribution-friendly with issue & PR templates
+## ✨ Features
+
+- 🎨 **Photo Editing** → optimize and enhance images.  
+- 🎬 **Video Tools** → fast rendering and editing.  
+- 🖌 **Logo Generator** → design & export vector logos.  
+- ✂️ **Background Removal** → AI-powered background eraser.  
+- 📱 **Responsive UI** → mobile-first, optimized with Tailwind.  
 
 ---
 
-## 🛠 Installation
-See [docs/INSTALL.md](docs/INSTALL.md) for full setup instructions.
+## 🛠 Tech Stack
+
+- [Next.js](https://nextjs.org/) – App Router  
+- [TypeScript](https://www.typescriptlang.org/) – Strong typing  
+- [Tailwind CSS](https://tailwindcss.com/) – Utility-first styling  
+- [ESLint](https://eslint.org/) & [Prettier](https://prettier.io/) – Code quality  
+- [GitHub Actions](https://docs.github.com/en/actions) – CI/CD  
+
+---
+
+## 🚀 Getting Started
+
+### 🔧 Installation
 
 ```bash
+# Clone repo
 git clone https://github.com/mydsrt-artweb/dsrt-app.git
 cd dsrt-app
+
+# Install dependencies
 npm install
+
+# Run dev server
 npm run dev
 
+👉 Visit http://localhost:3000
 
----
+📦 Build for Production
 
-🧩 Documentation
+npm run build
+npm run start
 
-Roadmap
+🌐 Export Static (for GitHub Pages)
 
-Architecture
-
-API Reference
-
-Style Guide
-
+npm run export
 
 
 ---
 
 🤝 Contributing
 
-We welcome contributions! Please check:
-
-Contributing Guidelines
-
-Code of Conduct
-
+Contributions are welcome!
+Please read our CONTRIBUTING.md and CODE_OF_CONDUCT.md.
 
 
 ---
 
 🔒 Security
 
-If you discover a security vulnerability, please check our Security Policy.
-For sensitive issues, contact us directly via email.
+If you discover any security vulnerabilities, please check our SECURITY.md.
 
 
 ---
@@ -79,3 +88,4 @@ For sensitive issues, contact us directly via email.
 📜 License
 
 This project is licensed under the MIT License.
+© 2025 DSRT — All rights reserved.
