@@ -1,40 +1,20 @@
-# 📦 Pull Request
+# 🚀 Pull Request
 
-## ✅ Checklist
-Please check the following before submitting your PR:
+## 📌 Description
+Please include a summary of the changes.
 
-- [ ] The code compiles correctly
-- [ ] Tests have been added or updated (if applicable)
-- [ ] Documentation has been updated (README, docs, etc.)
-- [ ] Linting and formatting have been applied (`npm run lint` / `npm run format`)
-- [ ] No sensitive information (keys, passwords, secrets) included
-
----
-
-## 📝 Description
-Please describe the changes made in this PR.
-
----
-
-## 🔗 Related Issues
+## 🔗 Related Issue
 Closes # (issue)
 
 ---
 
-## 🚀 Type of Change
-- [ ] 🐛 Bug fix  
-- [ ] ✨ New feature  
-- [ ] ♻️ Refactor (no functional changes, improvements)  
-- [ ] 📚 Documentation update  
-- [ ] ⚡ Performance improvement  
-- [ ] ✅ Test addition/update  
+## ✅ Checklist
+- [ ] Code follows project style guidelines
+- [ ] Lint & tests pass locally (`npm run lint && npm test`)
+- [ ] Documentation updated if needed
+- [ ] Screenshots included (for UI changes)
 
 ---
 
-## 🖼 Screenshots / Demo (if applicable)
-Add screenshots, GIFs, or links to a demo if relevant.
-
----
-
-## 📌 Additional Notes
-Add any other context or information about the PR here.
+## 📸 Screenshots (UI Changes)
+(Insert images or GIFs if applicable)
