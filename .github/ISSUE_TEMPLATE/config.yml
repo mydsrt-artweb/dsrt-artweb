@@ -1,18 +1,8 @@
 blank_issues_enabled: false
-
 contact_links:
-  - name: 📖 Documentation
-    url: https://your-domain.com/docs
-    about: Check the official documentation before creating an issue.
-
-  - name: 💬 Discussions
-    url: https://github.com/your-org/dsrt-app/discussions
-    about: Ask questions, share ideas, and discuss improvements.
-
-  - name: 🛟 Support
-    url: https://your-domain.com/support
-    about: Need help? Reach out to the support team here.
-
-  - name: 🔒 Security
-    url: https://github.com/your-org/dsrt-app/security/policy
-    about: Found a vulnerability? Please report it responsibly.
+  - name: 📘 General Discussions
+    url: https://github.com/mydsrt-artweb/discussions
+    about: Ask questions, share ideas, or start community discussions.
+  - name: 🔒 Security Issues
+    url: https://github.com/mydsrt-artweb/security/policy
+    about: Please report security vulnerabilities responsibly.
