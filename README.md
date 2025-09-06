@@ -1,23 +1,30 @@
-# dsrt-artweb
+# dsrt-app
 
 A modern web application built with **Next.js 14**, **TypeScript**, and **Tailwind CSS**.  
-This project follows best practices for scalability, maintainability, and open-source collaboration.
+This project is developed and maintained by [dsrt-app](https://github.com/mydsrt-artweb).
+
+📸 Follow us on Instagram → [@dessert.adm](https://www.instagram.com/dessert.adm?igsh=MXN1aHJtM2tqdXl3MQ==)  
+📧 Contact us → [artwebdsrt@gmail.com](mailto:artwebdsrt@gmail.com)
+
+---
 
 ## 🚀 Features
-- Next.js App Router
-- TypeScript strict mode
-- Tailwind CSS styling
+- Next.js App Router with server-side rendering
+- TypeScript strict mode enabled
+- Tailwind CSS for modern UI
 - API routes with serverless functions
-- ESLint + Prettier code quality
+- ESLint + Prettier code quality setup
 - GitHub Actions for CI/CD
 - Professional legal & documentation setup
+
+---
 
 ## 📦 Installation
 See [docs/INSTALL.md](./docs/INSTALL.md) for detailed setup instructions.
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/dsrt-app.git
+git clone https://github.com/mydsrt-artweb/dsrt-app.git
 cd dsrt-app
 
 # Install dependencies
@@ -25,6 +32,9 @@ npm install
 
 # Run development server
 npm run dev
+
+
+---
 
 📘 Documentation
 
@@ -39,9 +49,15 @@ API Reference
 Style Guide
 
 
+
+---
+
 🤝 Contributing
 
-We welcome contributions! Please see CONTRIBUTING.md for guidelines.
+We welcome contributions from the community! Please read CONTRIBUTING.md first.
+
+
+---
 
 📜 License
 
@@ -53,7 +69,7 @@ This project is licensed under the MIT License.
 ```markdown
 # Contributing to dsrt-app
 
-We welcome contributions from the community! Please follow these guidelines to help us maintain a professional and efficient workflow.
+Thank you for your interest in contributing to **dsrt-app**! 🎉
 
 ## 🛠 Development Workflow
 1. Fork the repository
@@ -62,22 +78,21 @@ We welcome contributions from the community! Please follow these guidelines to h
 4. Push to your fork (`git push origin feature/my-feature`)
 5. Open a Pull Request
 
-## ✅ Commit Message Convention
-We follow [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/):
-
+## ✅ Commit Convention
+We follow [Conventional Commits](https://www.conventionalcommits.org/):
 - `feat:` New feature
 - `fix:` Bug fix
-- `docs:` Documentation changes
-- `style:` Code style changes (formatting, no logic change)
-- `refactor:` Code refactor
+- `docs:` Documentation only changes
+- `style:` Code formatting only
+- `refactor:` Code change that neither fixes a bug nor adds a feature
 - `test:` Adding or fixing tests
-- `chore:` Other maintenance tasks
+- `chore:` Maintenance tasks
 
 ## 📋 Code Guidelines
-- Use **TypeScript** strictly
+- Use **TypeScript strict mode**
 - Run `npm run lint` before submitting
-- Write tests for new features
 - Follow [STYLEGUIDE.md](./docs/STYLEGUIDE.md)
 
 ## 🔒 Security
-If you discover a security issue, please **do not open a public issue**. Instead, report it via [SECURITY.md](./SECURITY.md
+Report vulnerabilities to [artwebdsrt@gmail.com](mailto:artwebdsrt@gmail.com).  
+Do **not** open a public issue.
