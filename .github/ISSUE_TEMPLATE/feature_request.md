@@ -1,19 +1,18 @@
 ---
-name: "✨ Feature Request"
-about: Suggest a new feature or improvement
-title: "[FEATURE] "
-labels: [ "✨ enhancement" ]
-assignees: ''
+name: ✨ Feature Request
+about: Suggest a new feature for DSRT
+title: "[Feature]: "
+labels: enhancement
 ---
 
-## 🎯 Problem Statement
-Is your feature request related to a problem?
+### Problem
+What problem are you trying to solve?
 
-## 💡 Proposed Solution
-A clear and concise description of what you want to happen.
+### Proposed Solution
+Describe the feature you’d like to see.
 
-## 🔄 Alternatives
-Any alternative solutions or features you’ve considered.
+### Alternatives
+Have you considered any alternatives?
 
-## 📸 Mockups / Examples
-Add sketches, screenshots, or Figma links if available.
+### Additional Context
+Add any other context or screenshots.
