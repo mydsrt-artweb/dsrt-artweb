@@ -1,21 +1,24 @@
-name: "🚀 Deploy to Vercel"
+name: Deploy to Vercel
 
 on:
   push:
-    branches: [ main ]
+    branches: [ "main" ]
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
-
     steps:
-      - name: 📥 Checkout repository
-        uses: actions/checkout@v4
+      - name: Checkout Repository
+        uses: actions/checkout@v3
 
-      - name: 🚀 Deploy
-        uses: amondnet/vercel-action@v25
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
         with:
-          vercel-token: ${{ secrets.VERCEL_TOKEN }}
-          vercel-org-id: ${{ secrets.VERCEL_ORG_ID }}
-          vercel-project-id: ${{ secrets.VERCEL_PROJECT_ID }}
-          working-directory: ./
+          node-version: 20
+          cache: npm
+
+      - name: Install Dependencies
+        run: npm install
+
+      - name: Deploy with Vercel
+        run: npx vercel --prod --token=${{ secrets.VERCEL_TOKEN }}
