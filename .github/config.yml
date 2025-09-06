@@ -1,0 +1,41 @@
+# GitHub Repository Configuration
+
+# Default settings for issues & pull requests
+# Reference: https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-repository-configuration
+
+version: 1
+
+# Default assignees for new issues or PRs
+assignees:
+  - mydsrt-artweb
+
+# Default reviewers for pull requests
+reviewers:
+  - mydsrt-artweb
+
+# Default labels for new issues
+labels:
+  - name: bug
+    color: d73a4a
+    description: Something isn’t working
+  - name: enhancement
+    color: a2eeef
+    description: New feature or request
+  - name: documentation
+    color: 0075ca
+    description: Improvements or additions to documentation
+  - name: question
+    color: d876e3
+    description: Further information requested
+
+# Default templates
+issue_template: bug_report.md
+pull_request_template: PULL_REQUEST_TEMPLATE.md
+
+# Auto-close stale issues/PRs (optional, if you enable Probot Stale)
+stale:
+  days: 30
+  label: wontfix
+  message: >
+    This issue has been automatically marked as stale because it has not had
+    recent activity. It will be closed in 7 days if no further activity occurs.
