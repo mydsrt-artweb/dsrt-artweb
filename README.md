@@ -79,10 +79,3 @@ For sensitive issues, contact us directly via email.
 📜 License
 
 This project is licensed under the MIT License.
-
----
-
-⚡ Dengan ini, repo kamu bakal kelihatan super profesional di GitHub:  
-- Build & Security badges update otomatis.  
-- License + Tech stack badges.  
-- Link ke GitHub, Instagram, Email.  
