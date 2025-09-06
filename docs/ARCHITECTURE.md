@@ -1,23 +1,49 @@
-# Architecture — DSRT App
+# DSRT App — System Architecture
+
+---
 
 ## Overview
-DSRT is a **Next.js 14 (App Router)** project focused on **digital editing tools**:
-- Photo editing
-- Video editing
-- Logo design
-- Automatic background removal (AI)
+DSRT (Digital Smart Revise Technology) is built to deliver **AI-powered editing tools**:
+- **Photo Optimization**
+- **Video Editing**
+- **Logo Design**
+- **Background Removal**
+
+---
 
 ## Frontend
-- **Framework**: Next.js
-- **Styling**: Tailwind CSS
-- **Components**: Modular (Header, Hero, Features, Footer, RainBackground)
-- **Accessibility**: Semantic HTML + aria-labels
+- **Framework**: Next.js 14 (App Router)
+- **UI Layer**: Tailwind CSS + custom animations
+- **State Management**: React Context / Hooks
+- **Components**:
+  - Header
+  - Hero
+  - Features
+  - Footer
+  - RainBackground
+
+---
 
 ## Backend
-- **Next.js API Routes** (`app/api/`)
-- Planned AI endpoints (remove-bg, video processing)
-- Future DB integration for user uploads & projects
+- **API Routes**: Served via Next.js API (`app/api/`)
+- **Planned AI Services**:
+  - `remove-bg`: background remover
+  - `photo/optimize`: image compression & color enhance
+  - `video/process`: trimming, stabilization
+  - `logo/export`: vector conversion
+- **Authentication**: To be added (JWT / OAuth2)
 
-## File Structure (highlight)
+---
 
-dsrt-app/ ├── app/               # Next.js App Router │   ├── page.tsx       # Landing page (Foto, Video, Logo, Remove BG) │   └── api/           # Planned API routes ├── src/components/    # UI (Hero, Features, Rain, Footer) ├── docs/              # Documentation ├── legal/             # Terms, Privacy, Disclaimer └── .github/           # CI/CD workflows
+## Infrastructure
+- **CI/CD**: GitHub Actions
+  - `ci.yml` → build, lint, test
+  - `deploy.yml` → Vercel auto-deploy
+- **Hosting**: Vercel (primary), GitHub Pages (static export option)
+- **Database**: Planned (Supabase / PostgreSQL for user data & projects)
+
+---
+
+## File Structure (Key)
+
+dsrt-app/ ├── app/ │   ├── page.tsx         # Landing page │   ├── layout.tsx       # Root layout │   └── api/             # API routes (planned) ├── src/components/      # UI components ├── public/              # Static assets ├── docs/                # Documentation ├── legal/               # Terms, Privacy, Disclaimer └── .github/             # CI/CD workflows
