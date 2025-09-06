@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --accent: #00ffd5;
+}
+
+.r {
+  position: absolute;
+  top: -150vh;
+  width: 2px;
+  background: rgba(0, 255, 213, 0.28);
+  filter: drop-shadow(0 0 6px rgba(0, 255, 213, 0.35));
+}
+
+@keyframes fall {
+  to {
+    transform: translateY(300vh);
+  }
+}
+
+.animate-fall {
+  animation: fall 6s linear infinite;
+}
