@@ -1,17 +1,15 @@
-# 📡 API Reference
+# 🔌 API Reference
 
-## 🔑 Authentication
-`POST /api/auth`
-- Handles login, register, and session management.
+### Auth API
+- `POST /api/auth/login`
+- `POST /api/auth/logout`
+- `GET /api/auth/me`
 
-## 🖼️ Replicate API
-`POST /api/replicate`
-- Calls AI models for image/video editing.
+### Editor API
+- `POST /api/replicate/remove-bg`
+- `POST /api/replicate/enhance`
+- `POST /api/replicate/filter`
 
-## 💎 Premium API
-`POST /api/premium`
-- Manages subscription upgrades and checks.
-
----
-
-⚠️ All requests require a valid **JWT token** unless otherwise specified.
+### Premium API
+- `POST /api/premium/subscribe`
+- `GET /api/premium/status`
