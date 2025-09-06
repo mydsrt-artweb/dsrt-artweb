@@ -3,127 +3,52 @@
 [![CI](https://github.com/mydsrt-artweb/dsrt-artweb/actions/workflows/ci.yml/badge.svg)](https://github.com/mydsrt-artweb/dsrt-artweb/actions/workflows/ci.yml)
 [![Deploy](https://github.com/mydsrt-artweb/dsrt-artweb/actions/workflows/deploy.yml/badge.svg)](https://github.com/mydsrt-artweb/dsrt-artweb/actions/workflows/deploy.yml)
 [![Security](https://github.com/mydsrt-artweb/dsrt-artweb/actions/workflows/security.yml/badge.svg)](./.github/SECURITY.md)
+[![Lint](https://github.com/mydsrt-artweb/dsrt-artweb/actions/workflows/lint.yml/badge.svg)](https://github.com/mydsrt-artweb/dsrt-artweb/actions/workflows/lint.yml)
+[![Tests](https://github.com/mydsrt-artweb/dsrt-artweb/actions/workflows/test.yml/badge.svg)](https://github.com/mydsrt-artweb/dsrt-artweb/actions/workflows/test.yml)
+[![Changelog](https://img.shields.io/badge/📜-Changelog-blue)](./CHANGELOG.md)
+[![Roadmap](https://img.shields.io/badge/🗺️-Roadmap-green)](./ROADMAP.md)
+[![Docs](https://img.shields.io/badge/📖-Docs-purple)](./docs/)
 [![License](https://img.shields.io/github/license/mydsrt-artweb/dsrt-artweb)](./legal/LICENSE.md)
 [![Sponsors](https://img.shields.io/badge/sponsor-❤-ff69b4)](./.github/FUNDING.yml)
 
 ---
 
 ## 📌 Overview
-**DSRT (Digital Smart Revise Technology)** is an **AI-powered creative editing platform**.  
-It enables individuals and businesses to **edit, transform, and optimize media** — including **photos, videos, logos, and backgrounds** — directly in the browser.
-
-🚀 Built with **Next.js 13+, Supabase, Replicate API, Tailwind, and Vercel**.
+**DSRT (Digital Smart Revise Technology)** is a next-generation AI-powered creative suite.  
+It provides tools for **photo editing, video editing, logo design, and background removal** with **real-time collaboration**.
 
 ---
 
-## ✨ Features
-- 🖼️ **Photo Editor** — crop, resize, filters, AI enhancement  
-- 🎬 **Video Editor** — lightweight trim, merge, transitions  
-- 🎨 **Logo Creator** — generate and export professional logos  
-- ✂️ **Background Removal** — one-click AI-powered remove-bg  
-- 🔗 **Realtime Collaboration** — edit together in the same session  
-- 💎 **Premium Plan** — HD exports, batch editing, pro filters  
-
----
-
-## 🏛 Architecture
-- **Frontend** → Next.js + Tailwind  
-- **Backend** → Next.js API routes + Supabase (Postgres, Auth, Storage)  
-- **AI Services** → Replicate API (image/video processing)  
-- **Hosting** → Vercel (CI/CD integrated)  
-
-📖 See [Architecture Guide](./docs/architecture.md)  
-
----
-
-## 📖 Documentation
-- [Installation Guide](./docs/install.md)  
-- [Deployment Guide](./docs/deployment.md)  
-- [API Reference](./docs/api.md)  
-- [Style Guide](./docs/styleguide.md)  
-- [Product Overview](./docs/product.md)  
-- [Roadmap](./docs/roadmap.md)  
-- [Changelog](./docs/changelog.md)  
-- [FAQ](./docs/faq.md)  
-- [Troubleshooting](./docs/troubleshooting.md)  
-
----
-
-## 🚀 Quick Start
-### 1. Clone & Install
+## 🚀 Installation
 ```bash
+# clone the repository
 git clone https://github.com/mydsrt-artweb/dsrt-artweb.git
-cd dsrt-artweb
+cd dsrt-app
+
+# install dependencies
 npm install
 
-2. Environment Setup
-
-Copy .env.example → .env.local and configure:
-
-NEXT_PUBLIC_SUPABASE_URL=...
-NEXT_PUBLIC_SUPABASE_ANON_KEY=...
-REPLICATE_API_TOKEN=...
-
-3. Run Development Server
-
+# start development server
 npm run dev
 
-Visit 👉 http://localhost:3000
-
 
 ---
 
-🧪 Testing
+📖 Documentation
 
-Unit & integration tests → npm run test
+📚 Full documentation available in the /docs directory.
 
-Coverage report → npm run test -- --coverage
+Installation
 
-E2E tests (Playwright/Cypress) → npm run test:e2e
+Styleguide
 
+API Reference
 
-📖 See Testing Guide
+Contributing
 
+Testing
 
----
-
-💎 Premium Features
-
-Upgrade to DSRT Premium to unlock:
-
-HD exports
-
-AI-powered auto-enhancement
-
-Batch editing
-
-Enterprise team support
-
-
-📖 Details in Product Guide
-
-
----
-
-🤝 Contributing
-
-We welcome contributions! 🎉
-
-Start with the Contributing Guide
-
-Follow the Code of Conduct
-
-Maintainers → see Maintainers List
-
-
-
----
-
-🛡️ Security
-
-Found a vulnerability? Please follow our Security Policy.
-
-General security overview → Security Docs.
+Troubleshooting
 
 
 
@@ -131,52 +56,27 @@ General security overview → Security Docs.
 
 ⚖️ Legal
 
+License
+
 Terms of Service
 
 Privacy Policy
 
 Disclaimer
 
-License
-
-
-
----
-
-💰 Sponsors
-
-Support DSRT development:
-
-GitHub Sponsors
-
-Patreon
-
-OpenCollective
-
 
 
 ---
 
-📣 Community
+🤝 Contributing
 
-Discussions → Q&A, ideas, proposals
-
-Issues → bug reports & feature requests
-
-Roadmap → upcoming milestones
-
+We welcome contributions!
+Please read our Contributing Guide and Code of Conduct.
 
 
 ---
 
-🏆 Credits
+💖 Sponsors
 
-Maintained by the DSRT Core Team.
-See Governance for details.
-
-
----
-
-📜 License
-
-Distributed under the MIT License.
+Help support DSRT by sponsoring us!
+See Funding.
