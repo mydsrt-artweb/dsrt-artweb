@@ -1,39 +1,66 @@
-# Installation Guide
+# DSRT App — Installation Guide
 
-## Requirements
-- Node.js 18 or newer
-- npm (recommended) or yarn
-
-## Steps
-```bash
-git clone https://github.com/mydsrt-artweb/dsrt-app.git
-cd dsrt-app
-npm install
-npm run dev
-
-Environment Variables
-
-Copy .env.example to .env.local and configure values:
-
-NEXT_PUBLIC_API_URL=http://localhost:3000/api
+This guide explains how to set up the DSRT application locally and prepare it for deployment.
 
 ---
 
-### **ROADMAP.md**
-```markdown
-# Roadmap
+## 1. Prerequisites
+Ensure you have installed:
+- **Node.js** v20 or later
+- **npm** (comes with Node.js) or alternative: Yarn / pnpm
+- **Git**
 
-## Q1 2025
-- [ ] Initial release
-- [ ] Authentication system
-- [ ] Basic API endpoints
+---
 
-## Q2 2025
-- [ ] Database integration (PostgreSQL)
-- [ ] Role-based access control
-- [ ] GitHub Actions CI/CD
+## 2. Getting Started
 
-## Long-Term
-- [ ] Multi-language support
-- [ ] Deployment with Docker & Kubernetes
-- [ ] Mobile app integration
+### Clone Repository
+```bash
+git clone https://github.com/mydsrt-artweb/dsrt-app.git
+cd dsrt-app
+
+Install Dependencies
+
+npm install
+
+Development Server
+
+npm run dev
+
+Access at: http://localhost:3000
+
+Production Build
+
+npm run build
+npm start
+
+
+---
+
+3. Environment Variables
+
+Create .env.local in the root directory:
+
+NEXT_PUBLIC_API_URL=https://api.dsrt.io
+
+(Adjust once backend API endpoints are live.)
+
+
+---
+
+4. Deployment
+
+Vercel (Recommended)
+
+Push to GitHub
+
+Connect repository to Vercel
+
+Deploy automatically from main branch
+
+
+GitHub Pages
+
+npm run export
+
+Generated static files are located in /out/.
