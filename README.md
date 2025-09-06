@@ -1,110 +1,83 @@
-# DSRT — Digital Smart Revise Technology ✨
+# dsrt-artweb
 
-> **AI-powered editing & digital transformation platform.**  
-> Edit photos, videos, logos, and remove backgrounds instantly with an elegant Next.js app.
+A modern web application built with **Next.js 14**, **TypeScript**, and **Tailwind CSS**.  
+This project follows best practices for scalability, maintainability, and open-source collaboration.
 
----
+## 🚀 Features
+- Next.js App Router
+- TypeScript strict mode
+- Tailwind CSS styling
+- API routes with serverless functions
+- ESLint + Prettier code quality
+- GitHub Actions for CI/CD
+- Professional legal & documentation setup
 
-## 📌 Features
-
-- 🖼️ **Photo Editing** — crop, retouch, optimize images.  
-- 🎬 **Video Editing** — trim, transitions, fast rendering.  
-- 🎨 **Logo Design** — create, customize, and export vector logos.  
-- ✂️ **Background Removal** — AI-powered auto & manual tools.  
-- 👤 **Profile Management** — account settings, themes, language preferences.  
-- 🚀 **Premium Plans** — unlock unlimited features, storage, and priority support.  
-
----
-
-## 🛠️ Tech Stack
-
-- [Next.js 13+](https://nextjs.org/) (App Router, TypeScript)  
-- [React](https://react.dev/) (UI components & state)  
-- [Tailwind CSS](https://tailwindcss.com/) (styling)  
-- [Node.js](https://nodejs.org/) (runtime)  
-- [Vercel](https://vercel.com/) (deployment-ready)  
-
----
-
-## 📂 Project Structure
-
-dsrt-app/ ├── LICENSE                # MIT License (root) ├── README.md              # Project overview ├── CONTRIBUTING.md        # Contribution guidelines ├── CODE_OF_CONDUCT.md     # Contributor rules ├── SECURITY.md            # Security policy │ ├── legal/                 # Extra legal docs │   ├── TERMS.md           # Terms of Service │   ├── PRIVACY.md         # Privacy Policy │   └── DISCLAIMER.md      # Disclaimer │ ├── docs/                  # Technical documentation │   ├── INSTALL.md         # Installation guide │   └── ROADMAP.md         # Future development │ ├── app/                   # Next.js app router pages ├── public/                # Static assets ├── package.json ├── tsconfig.json └── next.config.js
-
----
-
-## ⚡ Installation
-
-Clone the repository and install dependencies:
+## 📦 Installation
+See [docs/INSTALL.md](./docs/INSTALL.md) for detailed setup instructions.
 
 ```bash
-git clone https://github.com/your-username/dsrt-app.git
+# Clone the repository
+git clone https://github.com/yourusername/dsrt-app.git
 cd dsrt-app
+
+# Install dependencies
 npm install
 
-Run the development server:
-
+# Run development server
 npm run dev
 
-Open your browser at 👉 http://localhost:3000
+📘 Documentation
 
+Installation Guide
 
----
+Roadmap
 
-🚀 Deployment
+Architecture
 
-This project is optimized for Vercel.
-Simply push the repo to GitHub and import it into Vercel Dashboard.
+API Reference
 
-For manual deployment:
+Style Guide
 
-npm run build
-npm run start
-
-
----
-
-📜 Legal
-
-📖 MIT License
-
-📑 Terms of Service
-
-🔒 Privacy Policy
-
-⚠️ Disclaimer
-
-
-
----
 
 🤝 Contributing
 
-Contributions are welcome!
-Please read the Contributing Guide before submitting pull requests.
+We welcome contributions! Please see CONTRIBUTING.md for guidelines.
 
-
----
-
-🗺️ Roadmap
-
-See the Roadmap for upcoming features and development plans.
-
-
----
-
-👨‍💻 Author
-
-DSRT Team
-GitHub • Website
-
-
----
-
-📄 License
+📜 License
 
 This project is licensed under the MIT License.
 
 ---
 
-⚡ Jadi sekarang kamu punya README **di root** dengan semua link ke legal & docs.  
-Mau saya gabungkan semua file ini (README + LICENSE + legal + docs) jadi **satu template repo siap upload ke GitHub**?
+### **CONTRIBUTING.md**
+```markdown
+# Contributing to dsrt-app
+
+We welcome contributions from the community! Please follow these guidelines to help us maintain a professional and efficient workflow.
+
+## 🛠 Development Workflow
+1. Fork the repository
+2. Create a new feature branch (`git checkout -b feature/my-feature`)
+3. Commit your changes with a clear message (`git commit -m "feat: add new feature"`)
+4. Push to your fork (`git push origin feature/my-feature`)
+5. Open a Pull Request
+
+## ✅ Commit Message Convention
+We follow [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/):
+
+- `feat:` New feature
+- `fix:` Bug fix
+- `docs:` Documentation changes
+- `style:` Code style changes (formatting, no logic change)
+- `refactor:` Code refactor
+- `test:` Adding or fixing tests
+- `chore:` Other maintenance tasks
+
+## 📋 Code Guidelines
+- Use **TypeScript** strictly
+- Run `npm run lint` before submitting
+- Write tests for new features
+- Follow [STYLEGUIDE.md](./docs/STYLEGUIDE.md)
+
+## 🔒 Security
+If you discover a security issue, please **do not open a public issue**. Instead, report it via [SECURITY.md](./SECURITY.md
