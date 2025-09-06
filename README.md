@@ -1,9 +1,9 @@
 # 🎨 DSRT — Digital Smart Revise Technology
 
-[![CI](https://github.com/your-org/dsrt-app/actions/workflows/ci.yml/badge.svg)](./.github/workflows/ci.yml)
-[![Deploy](https://github.com/your-org/dsrt-app/actions/workflows/deploy.yml/badge.svg)](./.github/workflows/deploy.yml)
-[![Security](https://github.com/your-org/dsrt-app/actions/workflows/security.yml/badge.svg)](./.github/SECURITY.md)
-[![License](https://img.shields.io/github/license/your-org/dsrt-app)](./legal/LICENSE.md)
+[![CI](https://github.com/mydsrt-artweb/dsrt-artweb/actions/workflows/ci.yml/badge.svg)](https://github.com/mydsrt-artweb/dsrt-artweb/actions/workflows/ci.yml)
+[![Deploy](https://github.com/mydsrt-artweb/dsrt-artweb/actions/workflows/deploy.yml/badge.svg)](https://github.com/mydsrt-artweb/dsrt-artweb/actions/workflows/deploy.yml)
+[![Security](https://github.com/mydsrt-artweb/dsrt-artweb/actions/workflows/security.yml/badge.svg)](./.github/SECURITY.md)
+[![License](https://img.shields.io/github/license/mydsrt-artweb/dsrt-artweb)](./legal/LICENSE.md)
 [![Sponsors](https://img.shields.io/badge/sponsor-❤-ff69b4)](./.github/FUNDING.yml)
 
 ---
@@ -52,8 +52,8 @@ It enables individuals and businesses to **edit, transform, and optimize media**
 ## 🚀 Quick Start
 ### 1. Clone & Install
 ```bash
-git clone https://github.com/your-org/dsrt-app.git
-cd dsrt-app
+git clone https://github.com/mydsrt-artweb/dsrt-artweb.git
+cd dsrt-artweb
 npm install
 
 2. Environment Setup
