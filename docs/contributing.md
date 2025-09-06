@@ -1,5 +1,3 @@
-## 📂 `docs/contributing.md`
-```markdown
 # 🤝 Contributing Guide
 
 1. Fork the repo
