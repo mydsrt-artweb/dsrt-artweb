@@ -91,7 +91,3 @@ See Funding.
 
 ---
 
-⚡ Jadi sekarang README udah **FINAL** dengan:  
-- Hero banner  
-- Badge grid (11+ badge, termasuk Stars, Forks, Contributors, Issues, PRs, Sponsors)  
-- Overview, Installation, Docs, Legal
