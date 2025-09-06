@@ -78,3 +78,7 @@ npm run start
 ---
 
 ✅ You’re all set! For deployment instructions, see Deployment Guide.
+
+---
+
+⚡ With `install.md`, your repo now has a **clean installation guide**, while `deployment.md` focuses only on **production setup**.  
