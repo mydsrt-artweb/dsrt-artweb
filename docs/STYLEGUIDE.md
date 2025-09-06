@@ -1,25 +1,33 @@
-### **docs/STYLEGUIDE.md**
-```markdown
-# Style Guide
+## 📄 `docs/STYLEGUIDE.md`
+```md
+# Style Guide — DSRT App
 
-## Code Style
-- Use **TypeScript strict mode**
-- Follow ESLint + Prettier rules
-- Maximum line length: 100 characters
+## Languages
+- **Code**: TypeScript
+- **Docs**: English (Bahasa Indonesia optional)
+
+## Formatting
+- Prettier (2 spaces indentation)
+- ESLint for linting
 
 ## Naming Conventions
-- Components: `PascalCase`
-- Variables & functions: `camelCase`
-- Constants: `UPPER_CASE`
-- Files: `kebab-case.tsx`
+- Components → `PascalCase`
+- Hooks → `useCamelCase`
+- Functions & vars → `camelCase`
+- Constants → `UPPER_SNAKE_CASE`
+- Files → `kebab-case`
 
-## Git
-- Branch naming: `feature/*`, `fix/*`, `chore/*`
-- Use Conventional Commits
+## Git Commit
+Follow **Conventional Commits**:
+- `feat:` new feature (e.g., `feat: add remove-bg API`)
+- `fix:` bug fix
+- `docs:` documentation update
+- `style:` formatting/style only
+- `refactor:` code change without new features
+- `test:` add or update tests
+- `chore:` tooling/config updates
 
-## Example
-```tsx
-// ✅ Good
-const UserProfileCard = () => {
-  return <div className="rounded-xl shadow-lg">Profile</div>;
-};
+## Pull Requests
+- Keep small and focused
+- Update docs/tests when needed
+- Reference issues (e.g., `Closes #7`)
