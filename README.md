@@ -1,44 +1,48 @@
-# dsrt-app
+# 🍨 dsrt-app
 
-A modern web application built with **Next.js 14**, **TypeScript**, and **Tailwind CSS**.  
-This project is developed and maintained by [dsrt-app](https://github.com/mydsrt-artweb).
+[![CI Pipeline](https://github.com/mydsrt-artweb/dsrt-app/actions/workflows/ci.yml/badge.svg)](https://github.com/mydsrt-artweb/dsrt-app/actions/workflows/ci.yml)
+[![Security Scans](https://github.com/mydsrt-artweb/dsrt-app/actions/workflows/security.yml/badge.svg)](https://github.com/mydsrt-artweb/dsrt-app/actions/workflows/security.yml)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+[![Node.js](https://img.shields.io/badge/Node.js-18%20%7C%2020-brightgreen)](https://nodejs.org/)
+[![Next.js](https://img.shields.io/badge/Next.js-13-black?logo=next.js)](https://nextjs.org/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5-blue?logo=typescript)](https://www.typescriptlang.org/)
+[![Follow on Instagram](https://img.shields.io/badge/Instagram-dessert.adm-ff69b4?logo=instagram)](https://www.instagram.com/dessert.adm)
 
-📸 Follow us on Instagram → [@dessert.adm](https://www.instagram.com/dessert.adm?igsh=MXN1aHJtM2tqdXl3MQ==)  
-📧 Contact us → [artwebdsrt@gmail.com](mailto:artwebdsrt@gmail.com)
+---
+
+## 📖 Overview
+**dsrt-app** is a modern web application built with [Next.js](https://nextjs.org/), [TypeScript](https://www.typescriptlang.org/), and [Tailwind CSS](https://tailwindcss.com/).  
+It is designed for scalability, maintainability, and professional open-source collaboration.
+
+- 🌐 **GitHub Repo**: [mydsrt-artweb/dsrt-app](https://github.com/mydsrt-artweb/dsrt-app)  
+- 📷 **Instagram**: [@dessert.adm](https://www.instagram.com/dessert.adm)  
+- 📧 **Contact**: [artwebdsrt@gmail.com](mailto:artwebdsrt@gmail.com)  
 
 ---
 
 ## 🚀 Features
-- Next.js App Router with server-side rendering
-- TypeScript strict mode enabled
-- Tailwind CSS for modern UI
-- API routes with serverless functions
-- ESLint + Prettier code quality setup
-- GitHub Actions for CI/CD
-- Professional legal & documentation setup
+- ⚡ Next.js 13 (App Router)
+- 🎨 Tailwind CSS for modern UI
+- 🔒 Security-first setup with GitHub Actions
+- 🧪 Built-in testing setup
+- 📚 Full documentation (installation, roadmap, API, style guide)
+- 🤝 Contribution-friendly with issue & PR templates
 
 ---
 
-## 📦 Installation
-See [docs/INSTALL.md](./docs/INSTALL.md) for detailed setup instructions.
+## 🛠 Installation
+See [docs/INSTALL.md](docs/INSTALL.md) for full setup instructions.
 
 ```bash
-# Clone the repository
 git clone https://github.com/mydsrt-artweb/dsrt-app.git
 cd dsrt-app
-
-# Install dependencies
 npm install
-
-# Run development server
 npm run dev
 
 
 ---
 
-📘 Documentation
-
-Installation Guide
+🧩 Documentation
 
 Roadmap
 
@@ -54,7 +58,20 @@ Style Guide
 
 🤝 Contributing
 
-We welcome contributions from the community! Please read CONTRIBUTING.md first.
+We welcome contributions! Please check:
+
+Contributing Guidelines
+
+Code of Conduct
+
+
+
+---
+
+🔒 Security
+
+If you discover a security vulnerability, please check our Security Policy.
+For sensitive issues, contact us directly via email.
 
 
 ---
@@ -65,34 +82,7 @@ This project is licensed under the MIT License.
 
 ---
 
-### **CONTRIBUTING.md**
-```markdown
-# Contributing to dsrt-app
-
-Thank you for your interest in contributing to **dsrt-app**! 🎉
-
-## 🛠 Development Workflow
-1. Fork the repository
-2. Create a new feature branch (`git checkout -b feature/my-feature`)
-3. Commit your changes with a clear message (`git commit -m "feat: add new feature"`)
-4. Push to your fork (`git push origin feature/my-feature`)
-5. Open a Pull Request
-
-## ✅ Commit Convention
-We follow [Conventional Commits](https://www.conventionalcommits.org/):
-- `feat:` New feature
-- `fix:` Bug fix
-- `docs:` Documentation only changes
-- `style:` Code formatting only
-- `refactor:` Code change that neither fixes a bug nor adds a feature
-- `test:` Adding or fixing tests
-- `chore:` Maintenance tasks
-
-## 📋 Code Guidelines
-- Use **TypeScript strict mode**
-- Run `npm run lint` before submitting
-- Follow [STYLEGUIDE.md](./docs/STYLEGUIDE.md)
-
-## 🔒 Security
-Report vulnerabilities to [artwebdsrt@gmail.com](mailto:artwebdsrt@gmail.com).  
-Do **not** open a public issue.
+⚡ Dengan ini, repo kamu bakal kelihatan super profesional di GitHub:  
+- Build & Security badges update otomatis.  
+- License + Tech stack badges.  
+- Link ke GitHub, Instagram, Email.  
