@@ -1,50 +1,39 @@
-# API Reference
+# API Documentation — DSRT App
 
-## Authentication
-### `POST /api/auth/login`
-Request:
+Base URL:
+
+/api
+
+## Endpoints
+
+### 1. Health Check
+
+GET /api/health
+
+Response:
 ```json
-{
-  "email": "user@example.com",
-  "password": "secret"
-}
+{ "status": "ok", "uptime": 12345 }
+
+2. Background Removal (planned)
+
+POST /api/remove-bg
+
+Request:
+
+{ "imageUrl": "https://example.com/photo.jpg" }
 
 Response:
 
-{
-  "token": "jwt-token"
-}
+{ "success": true, "resultUrl": "https://cdn.dsrt.io/output/photo-nobg.png" }
 
-Example Usage
+3. Photo Optimization (planned)
 
-curl -X POST http://localhost:3000/api/auth/login \
-  -H "Content-Type: application/json" \
-  -d '{"email":"user@example.com","password":"secret"}'
+POST /api/photo/optimize
 
----
+4. Video Editing (planned)
 
-### **docs/STYLEGUIDE.md**
-```markdown
-# Style Guide
+POST /api/video/edit
 
-## Code Style
-- Use **TypeScript strict mode**
-- Follow ESLint + Prettier rules
-- Maximum line length: 100 characters
+5. Logo Export (planned)
 
-## Naming Conventions
-- Components: `PascalCase`
-- Variables & functions: `camelCase`
-- Constants: `UPPER_CASE`
-- Files: `kebab-case.tsx`
-
-## Git
-- Branch naming: `feature/*`, `fix/*`, `chore/*`
-- Use Conventional Commits
-
-## Example
-```tsx
-// ✅ Good
-const UserProfileCard = () => {
-  return <div className="rounded-xl shadow-lg">Profile</div>;
-};
+POST /api/logo/export
