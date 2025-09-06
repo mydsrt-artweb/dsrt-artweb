@@ -1,83 +1,22 @@
 # 🚀 Deployment Guide
 
-## 1. Prerequisites
+### Requirements
 - Node.js 20+
-- pnpm or npm
-- Vercel CLI installed (`npm i -g vercel`)
+- Vercel account
+- Supabase project
+- Replicate API token
+- Stripe account
 
-## 2. Environment Variables
-Copy `.env.example` to `.env.local` and configure:
-- `NEXT_PUBLIC_SUPABASE_URL`
-- `NEXT_PUBLIC_SUPABASE_ANON_KEY`
-- `REPLICATE_API_TOKEN`
-- `VERCEL_PROJECT_ID`, `VERCEL_ORG_ID`
-
-## 3. Local Development
-```bash
-npm install
-npm run dev
-
-4. Deployment to Vercel
-
-vercel --prod
-
-
----
-
-For advanced setups (Docker, self-hosting), extend this doc.
-
----
-
-## 🔹 `docs/contributing.md`
-```markdown
-# 🤝 Contributing Guide
-
-Thank you for considering contributing to **DSRT**!
-
-## 🛠️ Development Setup
-1. Fork the repo
-2. Clone locally
-3. Install dependencies
+### Steps
+1. Clone repo  
    ```bash
-   npm install
-   npm run dev
+   git clone https://github.com/mydsrt-artweb/dsrt-artweb.git
+   cd dsrt-app
 
-🧪 Testing
-
-npm run test
-
-📋 Pull Requests
-
-Use a clear branch name (feature/..., fix/...)
-
-Ensure CI (✅ Lint + Tests + Build) passes
-
-Fill the PR Template
+2. Install deps: npm install
 
 
-💡 Issues
-
-Use 🐞 Bug Report
-
-Use ✨ Feature Request
+3. Create .env.local from config/env.example
 
 
----
-
-## 🔹 `docs/disclaimer.md`
-```markdown
-# ⚠️ Developer Disclaimer
-
-This project is under **active development**.  
-Features, APIs, and architecture **may change without notice**.
-
-## 🚧 Current Limitations
-- AI features may produce inconsistent results
-- Premium features are still experimental
-- Documentation may lag behind implementation
-
-## 🔄 Roadmap
-For upcoming milestones, see [Discussions](https://github.com/your-org/dsrt-app/discussions).
-
----
-For legal disclaimers, see [LEGAL DISCLAIMER](../legal/DISCLAIMER.md).
+4. Push to GitHub → workflows auto-deploy to Vercel
