@@ -1,16 +1,3 @@
-We welcome contributions from the community! Please read CONTRIBUTING.md first.
-
-
----
-
-📜 License
-
-This project is licensed under the MIT License.
-
----
-
-### **CONTRIBUTING.md**
-```markdown
 # Contributing to dsrt-app
 
 Thank you for your interest in contributing to **dsrt-app**! 🎉
