@@ -1,84 +1,32 @@
-# 🛠️ Installation Guide
+# 💻 Installation
 
-This guide explains how to set up **DSRT (Digital Smart Revise Technology)** locally for development.
+### Prerequisites
+- Node.js 20+
+- npm 9+
 
----
-
-## 1. 📦 Requirements
-- Node.js **20+**
-- pnpm (**recommended**) or npm
-- Git
-- Vercel CLI (optional, for deployments)
-
----
-
-## 2. 🔄 Clone the Repository
+### Setup
 ```bash
-git clone https://github.com/your-org/dsrt-app.git
+git clone https://github.com/mydsrt-artweb/dsrt-artweb.git
 cd dsrt-app
-
-
----
-
-3. 📥 Install Dependencies
-
-Using pnpm:
-
-pnpm install
-
-Or using npm:
-
 npm install
-
-
----
-
-4. ⚙️ Environment Variables
-
-Copy .env.example into .env.local and configure:
-
-cp config/env.example .env.local
-
-Fill in the following:
-
-NEXT_PUBLIC_SUPABASE_URL
-
-NEXT_PUBLIC_SUPABASE_ANON_KEY
-
-REPLICATE_API_TOKEN
-
-NEXT_PUBLIC_API_URL
-
-
-
----
-
-5. 🚀 Run Development Server
-
 npm run dev
 
-Now visit 👉 http://localhost:3000
+Environment Variables
 
-
----
-
-6. 🧪 Run Tests
-
-npm run test
-
+See config/env.example
 
 ---
 
-7. 📦 Build for Production
+## 📂 `docs/styleguide.md`
+```markdown
+# 🎨 Styleguide
 
-npm run build
-npm run start
+### Code Style
+- Use TypeScript (`.ts` / `.tsx`)
+- Follow ESLint + Prettier rules
+- Imports use `@/*`
 
-
----
-
-✅ You’re all set! For deployment instructions, see Deployment Guide.
-
----
-
-⚡ With `install.md`, your repo now has a **clean installation guide**, while `deployment.md` focuses only on **production setup**.  
+### UI
+- TailwindCSS with brand colors
+- Components: keep small and reusable
+- Animations: use Framer Motion
