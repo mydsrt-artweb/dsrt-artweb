@@ -1,31 +1,27 @@
-# 📜 Terms of Service
+# 📑 Terms of Service
 
-**Effective Date:** January 1, 2025  
-Welcome to **DSRT (Digital Smart Revise Technology)**.  
-By using our services, you agree to the following terms:
+Effective Date: September 2024
 
----
+Welcome to **DSRT (Digital Smart Revise Technology)**. By using our service, you agree to these terms.
 
-## 1. ✅ Use of Service
-You may use our tools (photo, video, logo, background removal) only for lawful purposes.
+## 1. Use of Service
+- You must be at least 13 years old.
+- You may not misuse the service or attempt unauthorized access.
 
-## 2. 🔐 Accounts
-You are responsible for maintaining the security of your account credentials.
+## 2. Accounts
+- You are responsible for maintaining the confidentiality of your account.
+- You agree to provide accurate and up-to-date information.
 
-## 3. 💳 Payments
-Premium features require a valid subscription.  
-All payments are non-refundable unless required by law.
+## 3. Premium Features
+- Premium access requires payment via Stripe.
+- Refunds are subject to Stripe’s policy.
 
-## 4. ⚖️ Intellectual Property
-All content, designs, and software remain the property of DSRT unless otherwise stated.
+## 4. Intellectual Property
+- Content created with DSRT remains yours.
+- DSRT retains rights to the software and branding.
 
-## 5. 🚫 Limitation of Liability
-We provide services "as-is" without warranties.  
-DSRT is not liable for damages resulting from usage.
+## 5. Termination
+- We reserve the right to suspend accounts that violate our terms.
 
-## 6. 🔄 Changes
-We may update these Terms at any time. Continued use means you accept the new Terms.
-
----
-
-📩 For legal questions, contact **legal@dsrt-app.com**
+## 6. Governing Law
+These terms are governed by applicable international law.
