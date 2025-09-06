@@ -1,33 +1,31 @@
 # 🔒 Privacy Policy
 
-**Effective Date:** January 1, 2025  
-Your privacy is important to us. This policy explains how DSRT handles your data.
+Effective Date: September 2024
 
----
+Your privacy is important to us. This policy explains how DSRT collects and uses data.
 
-## 1. 📥 Information We Collect
-- Account information (e.g., email, name)  
-- Uploaded media (for editing features)  
-- Usage data (logs, analytics)  
+## 1. Information We Collect
+- Account information (email, name)
+- Usage data (features used, session logs)
+- Payment data (via Stripe, not stored by us)
 
-## 2. 🛠️ How We Use Information
-- To provide and improve services  
-- To personalize your experience  
-- For security and fraud prevention  
+## 2. How We Use Information
+- Provide and improve DSRT services
+- Analyze usage for performance
+- Communicate updates and support
 
-## 3. 🤝 Sharing of Information
-We do **not** sell your data.  
-We may share with trusted providers (cloud hosting, payments, analytics).  
+## 3. Data Storage
+- All data is stored in **Supabase** (Postgres + Storage).
+- AI processing may use **Replicate API**.
 
-## 4. 🗑️ Data Retention
-We keep your data only as long as necessary for the stated purposes.  
+## 4. Third Parties
+- Stripe (payments)
+- Vercel (hosting)
+- Supabase (auth & storage)
 
-## 5. 🧾 Your Rights
-You may request access, correction, or deletion of your data anytime.  
+## 5. User Rights
+- Request data export or deletion
+- Opt out of marketing communications
 
-## 6. 🔐 Security
-We use industry-standard measures to protect your information.  
-
----
-
-📩 For privacy matters, contact **privacy@dsrt-app.com**
+## 6. Contact
+Questions? Email **privacy@dsrt.io**
