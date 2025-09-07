@@ -6,7 +6,7 @@
 [![Tests](https://github.com/mydsrt-artweb/dsrt-artweb/actions/workflows/test.yml/badge.svg)](https://github.com/mydsrt-artweb/dsrt-artweb/actions/workflows/test.yml)
 [![Format](https://github.com/mydsrt-artweb/dsrt-artweb/actions/workflows/format.yml/badge.svg)](https://github.com/mydsrt-artweb/dsrt-artweb/actions/workflows/format.yml)
 [![Coverage](https://codecov.io/gh/mydsrt-artweb/dsrt-artweb/branch/main/graph/badge.svg)](https://codecov.io/gh/mydsrt-artweb/dsrt-artweb)
-[![Dependencies](https://github.com/mydsrt-artweb/dsrt-artweb/actions/workflows/deps.yml/badge.svg)](https://github.com/mydsrt-artweb/dsrt-artweb/actions/workflows/deps.yml)
+[![Dependency Check](https://github.com/mydsrt-artweb/dsrt-artweb/actions/workflows/deps.yml/badge.svg?branch=main)](https://github.com/mydsrt-artweb/dsrt-artweb/actions/workflows/deps.yml)
 [![Release](https://img.shields.io/github/v/release/mydsrt-artweb/dsrt-artweb?logo=github)](https://github.com/mydsrt-artweb/dsrt-artweb/releases)
 [![License](https://img.shields.io/github/license/mydsrt-artweb/dsrt-artweb)](./LICENSE)
 [![Code Style](https://img.shields.io/badge/code%20style-prettier-ff69b4.svg)](https://prettier.io/)
