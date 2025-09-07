@@ -2,41 +2,47 @@ name: CI
 
 on:
   push:
-    branches: [main]
+    branches: [ "main" ]
   pull_request:
-    branches: [main]
+    branches: [ "main" ]
 
 jobs:
   build:
     runs-on: ubuntu-latest
 
     steps:
+      # Checkout source code
       - name: Checkout repository
         uses: actions/checkout@v4
 
+      # Setup Node.js
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: 18
-          cache: npm
+          cache: "npm"
 
-      # Install dependencies, regenerate lockfile if needed
+      # Install dependencies (will generate package-lock.json if missing)
       - name: Install dependencies
-        run: |
-          if [ ! -f package-lock.json ]; then
-            echo "No lockfile found, generating..."
-            npm install --package-lock-only
-          fi
-          npm ci || npm install
+        run: npm install
 
       # Lint check
-      - name: Run lint
-        run: npm run lint || echo "Lint warnings detected"
-
-      # Build check
-      - name: Run build
-        run: npm run build
+      - name: Run Linter
+        run: npm run lint
 
       # Run tests
-      - name: Run tests
-        run: npm test --passWithNoTests
+      - name: Run Tests
+        run: npm test
+
+      # Build Next.js app
+      - name: Build project
+        run: npm run build
+
+  security:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Run security audit
+        run: npm audit --audit-level=high || true
