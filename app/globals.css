@@ -2,24 +2,41 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --accent: #00ffd5;
+/* 🎨 Custom global styles */
+html,
+body {
+  @apply h-full bg-gray-50 text-gray-800 antialiased;
 }
 
-.r {
-  position: absolute;
-  top: -150vh;
-  width: 2px;
-  background: rgba(0, 255, 213, 0.28);
-  filter: drop-shadow(0 0 6px rgba(0, 255, 213, 0.35));
+main {
+  @apply flex flex-col min-h-screen;
 }
 
-@keyframes fall {
-  to {
-    transform: translateY(300vh);
-  }
+/* ✨ Section titles */
+h1,
+h2,
+h3 {
+  @apply font-bold;
 }
 
-.animate-fall {
-  animation: fall 6s linear infinite;
+h1 {
+  @apply text-3xl sm:text-4xl;
+}
+
+h2 {
+  @apply text-2xl sm:text-3xl mt-4 mb-2;
+}
+
+h3 {
+  @apply text-xl sm:text-2xl mt-3 mb-1;
+}
+
+/* 🖼️ Links */
+a {
+  @apply text-blue-600 hover:text-blue-800 transition-colors;
+}
+
+/* 🔥 Custom background (optional) */
+.bg-rain {
+  background: linear-gradient(to bottom, #cce7ff, #99d0ff);
 }
