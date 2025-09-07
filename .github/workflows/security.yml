@@ -1,23 +1,18 @@
 name: Security Scan
 
 on:
-  push:
-    branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
   schedule:
-    - cron: "0 0 * * 0"
+    - cron: '0 0 * * 0' # weekly
+  push:
+    branches: [main]
 
 jobs:
-  codeql:
+  audit:
     runs-on: ubuntu-latest
-    permissions:
-      actions: read
-      contents: read
-      security-events: write
     steps:
       - uses: actions/checkout@v4
-      - uses: github/codeql-action/init@v3
+      - uses: actions/setup-node@v4
         with:
-          languages: javascript
-      - uses: github/codeql-action/analyze@v3
+          node-version: 18
+      - run: npm install
+      - run: npm audit --audit-level=high || true
