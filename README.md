@@ -1,93 +1,113 @@
-<div align="center">
-  <img src="./public/backgrounds/banner.png" alt="DSRT Banner" width="100%" />
+# 🎨 DSRT — Digital Smart Revise Technology
 
-  # 🎨 DSRT — Digital Smart Revise Technology
-  *AI-powered creative suite for photo, video, and design editing.*
-</div>
-
----
-
-<div align="center">
-
-| CI | Deploy | Lint | Tests | Security |
-|----|--------|------|-------|----------|
-| [![CI](https://github.com/mydsrt-artweb/dsrt-artweb/actions/workflows/ci.yml/badge.svg)](https://github.com/mydsrt-artweb/dsrt-artweb/actions/workflows/ci.yml) | [![Deploy](https://github.com/mydsrt-artweb/dsrt-artweb/actions/workflows/deploy.yml/badge.svg)](https://github.com/mydsrt-artweb/dsrt-artweb/actions/workflows/deploy.yml) | [![Lint](https://github.com/mydsrt-artweb/dsrt-artweb/actions/workflows/lint.yml/badge.svg)](https://github.com/mydsrt-artweb/dsrt-artweb/actions/workflows/lint.yml) | [![Tests](https://github.com/mydsrt-artweb/dsrt-artweb/actions/workflows/test.yml/badge.svg)](https://github.com/mydsrt-artweb/dsrt-artweb/actions/workflows/test.yml) | [![Security Scan](https://github.com/mydsrt-artweb/dsrt-artweb/actions/workflows/security.yml/badge.svg)](https://github.com/mydsrt-artweb/dsrt-artweb/actions/workflows/security.yml) |
-
-| 📜 Changelog | 🗺️ Roadmap | 📖 Docs | ⚖️ License | 🏷️ Release | ⭐ Stars | 🍴 Forks | 👥 Contributors | 🐛 Issues | 🔀 Pull Requests | ❤️ Sponsors |
-|--------------|------------|---------|------------|-------------|----------|----------|-----------------|-----------|------------------|-------------|
-| [![Changelog](https://img.shields.io/badge/📜-Changelog-blue)](./CHANGELOG.md) | [![Roadmap](https://img.shields.io/badge/🗺️-Roadmap-green)](./ROADMAP.md) | [![Docs](https://img.shields.io/badge/📖-Docs-purple)](./docs/) | [![License](https://img.shields.io/github/license/mydsrt-artweb/dsrt-artweb)](./LICENSE) | [![Release](https://img.shields.io/github/v/release/mydsrt-artweb/dsrt-artweb?logo=github&color=orange)](https://github.com/mydsrt-artweb/dsrt-artweb/releases) | [![Stars](https://img.shields.io/github/stars/mydsrt-artweb/dsrt-artweb?style=social)](https://github.com/mydsrt-artweb/dsrt-artweb/stargazers) | [![Forks](https://img.shields.io/github/forks/mydsrt-artweb/dsrt-artweb?style=social)](https://github.com/mydsrt-artweb/dsrt-artweb/network/members) | [![Contributors](https://img.shields.io/github/contributors/mydsrt-artweb/dsrt-artweb)](https://github.com/mydsrt-artweb/dsrt-artweb/graphs/contributors) | [![Issues](https://img.shields.io/github/issues/mydsrt-artweb/dsrt-artweb)](https://github.com/mydsrt-artweb/dsrt-artweb/issues) | [![Pull Requests](https://img.shields.io/github/issues-pr/mydsrt-artweb/dsrt-artweb)](https://github.com/mydsrt-artweb/dsrt-artweb/pulls) | [![Sponsors](https://img.shields.io/badge/sponsor-❤-ff69b4)](./.github/FUNDING.yml) |
-
-</div>
+[![CI](https://github.com/mydsrt-artweb/dsrt-artweb/actions/workflows/ci.yml/badge.svg)](https://github.com/mydsrt-artweb/dsrt-artweb/actions/workflows/ci.yml)
+[![Deploy](https://github.com/mydsrt-artweb/dsrt-artweb/actions/workflows/deploy.yml/badge.svg)](https://github.com/mydsrt-artweb/dsrt-artweb/actions/workflows/deploy.yml)
+[![Lint](https://github.com/mydsrt-artweb/dsrt-artweb/actions/workflows/lint.yml/badge.svg)](https://github.com/mydsrt-artweb/dsrt-artweb/actions/workflows/lint.yml)
+[![Tests](https://github.com/mydsrt-artweb/dsrt-artweb/actions/workflows/test.yml/badge.svg)](https://github.com/mydsrt-artweb/dsrt-artweb/actions/workflows/test.yml)
+[![Format](https://github.com/mydsrt-artweb/dsrt-artweb/actions/workflows/format.yml/badge.svg)](https://github.com/mydsrt-artweb/dsrt-artweb/actions/workflows/format.yml)
+[![Coverage](https://codecov.io/gh/mydsrt-artweb/dsrt-artweb/branch/main/graph/badge.svg)](https://codecov.io/gh/mydsrt-artweb/dsrt-artweb)
+[![Dependencies](https://github.com/mydsrt-artweb/dsrt-artweb/actions/workflows/deps.yml/badge.svg)](https://github.com/mydsrt-artweb/dsrt-artweb/actions/workflows/deps.yml)
+[![Release](https://img.shields.io/github/v/release/mydsrt-artweb/dsrt-artweb?logo=github)](https://github.com/mydsrt-artweb/dsrt-artweb/releases)
+[![License](https://img.shields.io/github/license/mydsrt-artweb/dsrt-artweb)](./LICENSE)
+[![Code Style](https://img.shields.io/badge/code%20style-prettier-ff69b4.svg)](https://prettier.io/)
+[![CodeQL](https://github.com/mydsrt-artweb/dsrt-artweb/actions/workflows/codeql.yml/badge.svg)](https://github.com/mydsrt-artweb/dsrt-artweb/actions/workflows/codeql.yml)
+[![Vercel](https://therealsujitk-vercel-badge.vercel.app/?app=dsrt-artweb)](https://dsrt-artweb.vercel.app)
 
 ---
 
 ## 📌 Overview
-**DSRT (Digital Smart Revise Technology)** is a next-generation AI-powered creative suite.  
-It provides tools for **photo editing, video editing, logo design, and background removal** with **real-time collaboration**.
+
+**DSRT (Digital Smart Revise Technology)** is a modern AI-powered creative editor built with **Next.js 15, React 18, TailwindCSS, Supabase, and Replicate AI**.  
+It provides tools for **photo, video, logo, and background editing**, with real-time collaboration and premium features.
 
 ---
 
-## 🚀 Installation
-```bash
-# clone the repository
-git clone https://github.com/mydsrt-artweb/dsrt-artweb.git
-cd dsrt-app
+## 🚀 Features
 
-# install dependencies
+- ✨ AI-powered photo & video editor  
+- 🖼️ Background remover and enhancer  
+- 🎨 Logo design and vector tools  
+- 🔒 Secure authentication with Supabase  
+- ⚡ Real-time collaboration (Socket.io)  
+- 🌐 Deployed on Vercel  
+
+---
+
+## 📂 Project Structure
+
+```bash
+dsrt-artweb/
+│
+├── public/                  # static assets
+│   ├── logo.png
+│   ├── icons/
+│   └── backgrounds/
+│
+├── src/
+│   ├── pages/               # Next.js pages
+│   ├── components/          # UI components
+│   ├── styles/              # CSS/Tailwind styles
+│   ├── hooks/               # Custom React hooks
+│   ├── context/             # React context providers
+│   ├── services/            # Supabase, Replicate, API clients
+│   ├── utils/               # Helpers & validators
+│   └── types/               # TypeScript types
+│
+├── docs/                    # Documentation
+├── .github/                 # Workflows & issue templates
+├── package.json
+├── tsconfig.json
+├── vercel.json
+└── README.md
+
+
+---
+
+🛠️ Installation
+
+# clone repo
+git clone https://github.com/mydsrt-artweb/dsrt-artweb.git
+cd dsrt-artweb
+
+# install deps
 npm install
 
-# start development server
+# run dev server
 npm run dev
 
 
 ---
 
-📖 Documentation
+⚙️ Environment Variables
 
-📚 Full documentation available in the /docs directory.
+Create .env.local:
 
-Installation
-
-Styleguide
-
-API Reference
-
-Contributing
-
-Testing
-
-Troubleshooting
-
+NEXT_PUBLIC_SUPABASE_URL=your-supabase-url
+NEXT_PUBLIC_SUPABASE_ANON_KEY=your-supabase-anon-key
+SUPABASE_SERVICE_ROLE_KEY=your-service-role-key
+REPLICATE_API_TOKEN=your-replicate-token
 
 
 ---
 
-⚖️ Legal
+✅ Contributing
 
-License
+We use Conventional Commits and Pull Request templates.
+Run lint and tests before pushing:
 
-Terms of Service
-
-Privacy Policy
-
-Disclaimer
-
+npm run lint
+npm run test
 
 
 ---
 
-🤝 Contributing
+📜 License
 
-We welcome contributions!
-Please read our Contributing Guide and Code of Conduct.
-
-
----
-
-💖 Sponsors
-
-Help support DSRT by sponsoring us!
-See Funding.
+This project is licensed under the MIT License.
+See LICENSE for details.
 
 ---
 
+⚡ Jadi sekarang README kamu udah super profesional:  
+- Semua badge aktif → CI, Deploy, Lint, Test, Format, Coverage, Dependencies, Release, License, Code Style, CodeQL, Vercel.  
+- Dokumentasi lengkap → Features, Project Structure, Setup, Env, Contributing, License.  
