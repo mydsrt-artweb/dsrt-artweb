@@ -1,36 +1,24 @@
-name: Dependency Update
+name: Dependency Check
 
 on:
   schedule:
-    - cron: '0 3 * * 0' # weekly (every Sunday at 03:00 UTC)
+    - cron: '0 0 * * *'
   workflow_dispatch:
 
 jobs:
   dependency-check:
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v3
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
         with:
-          node-version: 18
-          cache: npm
+          node-version: '18'
 
       - name: Install dependencies
         run: npm install
 
-      - name: Check outdated dependencies
-        run: npx npm-check-updates -u
-
-      - name: Commit dependency updates
-        run: |
-          if [[ `git status --porcelain` ]]; then
-            git config user.name "github-actions[bot]"
-            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-            git add package.json package-lock.json
-            git commit -m "chore(deps): update dependencies [skip ci]"
-            git push origin main
-          fi
+      - name: Run dependency checker
+        run: npm audit || true
